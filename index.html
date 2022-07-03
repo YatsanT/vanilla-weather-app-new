@@ -21,7 +21,7 @@
         <div class="weather-app">
           <form id="search-form" class="mb-3">
             <div class="row">
-              <div class="col-9">
+              <div class="col-6">
                 <input
                   type="search"
                   placeholder="Type a city..."
@@ -29,12 +29,18 @@
                   id="city-input"
                 />
               </div>
+
               <div class="col-3">
                 <input
                   type="submit"
-                  value="search"
-                  class="btn btn-primary w-100"
+                  class="btn btn-info w-100"
+                  value="📌"
+                  id="your-location"
                 />
+              </div>
+
+              <div class="col-3">
+                <input type="submit" value="🔍" class="btn btn-info w-100" />
               </div>
             </div>
           </form>
