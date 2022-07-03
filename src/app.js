@@ -30,6 +30,27 @@ function formatDay(timestamp) {
   return days[day];
 }
 
+let now = new Date();
+let date = now.getDate();
+
+let curdate = document.querySelector("#current-month");
+let months = [
+  "January",
+  "February",
+  "March",
+  "April",
+  "May",
+  "June",
+  "July",
+  "August",
+  "September",
+  "October",
+  "November",
+  "December",
+];
+let month = months[now.getMonth()];
+curdate.innerHTML = `${month}, ${date}`;
+
 function displayForecast(response) {
   let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");

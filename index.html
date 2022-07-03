@@ -33,23 +33,35 @@
               <div class="col-3">
                 <input
                   type="submit"
-                  class="btn btn-info w-100"
+                  class="btn btn-light w-100"
                   value="📌"
                   id="your-location"
                 />
               </div>
 
               <div class="col-3">
-                <input type="submit" value="🔍" class="btn btn-info w-100" />
+                <input type="submit" value="🔍" class="btn btn-light w-100" />
               </div>
             </div>
           </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
+          <div class="row">
+            <div class="col-6">
+              <div class="overview">
+                <h1 id="city"></h1>
+                <ul>
+                  <li id="description"></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="curdate">
+                <li>
+                  <span id="date"></span>
+                  <br />
+                  <span id="current-month"></span>
+                </li>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-6">
